@@ -8,5 +8,8 @@
 
 class Game
 {
+public:
+	// constructor
+	Game();
 };
 
