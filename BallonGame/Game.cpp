@@ -24,11 +24,12 @@ Game::Game()
 
 Game::~Game()
 {
+    delete this->mWindow;
 }
 
 bool Game::running()
 {
-    return false;
+    return this->mWindow->isOpen();
 }
 
 void Game::processInput()
