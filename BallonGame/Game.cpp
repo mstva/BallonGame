@@ -34,6 +34,21 @@ bool Game::running()
 
 void Game::processInput()
 {
+    while (this->mWindow->pollEvent(this->mEvent))
+    {
+        switch (this->mEvent.type)
+        {
+        case sf::Event::Closed:
+            this->mWindow->close();
+            break;
+        case sf::Event::KeyPressed:
+            if (this->mEvent.key.code == sf::Keyboard::Escape)
+            {
+                this->mWindow->close();
+            }
+            break;
+        }
+    }
 }
 
 void Game::updateGame()
