@@ -11,5 +11,12 @@ class Game
 public:
 	// constructor
 	Game();
+	~Game();
+
+	// public functions
+	bool running();
+	void processInput();
+	void updateGame();
+	void renderGame();
 };
 
