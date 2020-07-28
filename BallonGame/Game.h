@@ -8,6 +8,16 @@
 
 class Game
 {
+private:
+	// private variables
+	sf::RenderWindow* window;
+	sf::VideoMode videoMode;
+	sf::Event event;
+
+	// private functions
+	void initVariables();
+	void initWindow();
+
 public:
 	// constructor
 	Game();
