@@ -53,8 +53,11 @@ void Game::processInput()
 
 void Game::updateGame()
 {
+    this->processInput();
 }
 
 void Game::renderGame()
 {
+    this->mWindow->clear(sf::Color(55, 100, 80, 255));
+    this->mWindow->display();
 }
