@@ -10,9 +10,9 @@ class Game
 {
 private:
 	// private variables
-	sf::RenderWindow* window;
-	sf::VideoMode videoMode;
-	sf::Event event;
+	sf::RenderWindow* mWindow;
+	sf::VideoMode mVideoMode;
+	sf::Event mEvent;
 
 	// private functions
 	void initVariables();
